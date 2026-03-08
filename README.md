@@ -3,103 +3,87 @@ Forecastify is a live weather and air quality web application that allows users 
 
 The application retrieves live data from the OpenWeather API and displays important weather information in a clean and responsive interface.
 
-🚀 Features
+# Features
 
-🔍 City SearchUsers can search for weather information by entering a city name.
+- 🔍 City SearchUsers can search for weather information by entering a city name.
 
-🌡️ Current TemperatureDisplays the current temperature of the searched city in Celsius.
+- 🌡️ Current TemperatureDisplays the current temperature of the searched city in Celsius.
 
-☁️ Weather DescriptionShows the current sky condition such as clear sky, cloudy, rain, etc.
+- ☁️ Weather DescriptionShows the current sky condition such as clear sky, cloudy, rain, etc.
 
-📅 Date and Time DisplayDisplays the current date and time based on the weather data received.
+- 📅 Date and Time DisplayDisplays the current date and time based on the weather data received.
 
-🌅 Sunrise & Sunset InformationShows sunrise and sunset timings for the selected city.
+- 🌅 Sunrise & Sunset InformationShows sunrise and sunset timings for the selected city.
 
-🌫️ Air Quality Index (AQI)Displays important air quality metrics such as:
+- 🌫️ Air Quality Index (AQI)Displays important air quality metrics such as:
 
-CO (Carbon Monoxide)
+     - CO (Carbon Monoxide)
 
-SO₂ (Sulfur Dioxide)
+    - SO₂ (Sulfur Dioxide)
 
-O₃ (Ozone)
+    - O₃ (Ozone)
 
-NO₂ (Nitrogen Dioxide)
+    - NO₂ (Nitrogen Dioxide)
 
 📆 5-Day Weather ForecastProvides weather predictions for the next five days using forecast data.
 
-🛠️ Technologies Used
+# Technologies Used
 
-HTML5 – Structure of the web application
+- HTML5 – Structure of the web application
 
-CSS3 – Styling and layout
+- CSS3 – Styling and layout
 
-Bootstrap 5 – Responsive design and UI components
+- Bootstrap 5 – Responsive design and UI components
 
-JavaScript (ES6) – Application logic and dynamic updates
+- JavaScript (ES6) – Application logic and dynamic updates
 
-jQuery – DOM manipulation
+- jQuery – DOM manipulation
 
-OpenWeather API – Fetching real-time weather and air quality data
+- OpenWeather API – Fetching real-time weather and air quality data
 
-🌐 API Used
+# API Used
 
-This project uses the weather data services provided by.
+This project uses the weather data services provided by openWeatherAPIs used in this project include:
 
-APIs used in this project include:
+- Current Weather API
 
-Current Weather API
+- Air Pollution API
 
-Air Pollution API
-
-5-Day / 3-Hour Forecast API
+- 5-Day / 3-Hour Forecast API
 
 These APIs provide real-time weather conditions, air quality data, and weather forecasts.
 
-📂 Project Structure
+#  How the Application Works
 
-Forecastify
-│
-├── index.html
-├── index.css
-├── README.md
-├── search.png
-├── cloud.png
-├── cloudy.png
-├── calendar.png
-├── time.png
-└── other weather icons
+1. The user enters a city name in the search bar.
 
-⚙️ How the Application Works
+2. The application sends a request to the OpenWeather API.
 
-The user enters a city name in the search bar.
+3. The API returns weather and air quality data.
 
-The application sends a request to the OpenWeather API.
+4. JavaScript dynamically updates the webpage with:
 
-The API returns weather and air quality data.
+  - City temperature
 
-JavaScript dynamically updates the webpage with:
+  - Weather description
 
-City temperature
+  - Date and time
 
-Weather description
+  - Sunrise and sunset timings
 
-Date and time
+  -  AQI metrics
 
-Sunrise and sunset timings
+   - 5-day weather forecast
 
-AQI metrics
+# Future Improvements
 
-5-day weather forecast
+- Possible improvements for future versions of Forecastify:
 
-📌 Future Improvements
+- Dynamic hourly forecast for Today's weather
 
-Possible improvements for future versions of Forecastify:
+- Weather icons based on real-time conditions
 
-Dynamic hourly forecast for Today's weather
+- Better UI animations and design improvements
 
-Weather icons based on real-time conditions
-
-Better UI animations and design improvements
-
-Automatic location detection using GPS
+- Automatic location detection using GPS
 
