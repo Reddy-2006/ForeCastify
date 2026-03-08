@@ -210,7 +210,7 @@
         async function fetchAQIData()
         {
           let cityName = document.getElementsByClassName('inputfield')[0].value;
-          let requestData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b81b2caa981f459c2d7f1c911dc9284d&units=metric`)
+          let requestData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=YOUR_API_KEY_HERE&units=metric`)
           let formattedData = await requestData.json();
           console.log("Formatted Data:",formattedData);
           
@@ -242,7 +242,7 @@
           let lat=formattedData.coord.lat;
           let lon=formattedData.coord.lon;
           
-          let requestAQIData=await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=b81b2caa981f459c2d7f1c911dc9284d`)
+          let requestAQIData=await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=YOUR_API_KEY`)
           let formattedAQIData=await requestAQIData.json();
           console.log('AQI Data:',formattedAQIData)
 
@@ -267,7 +267,7 @@
           $("#so2Value")[0].innerText=list.so2
         }
     
-        let forecastRequest = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b81b2caa981f459c2d7f1c911dc9284d&units=metric`)
+        let forecastRequest = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=YOUR_API_KEY&units=metric`)
         let forecastData = await forecastRequest.json()
         console.log("Forecast Data:",forecastData)
         let forecastContainer = document.getElementById("fiveDayForecast")
@@ -293,4 +293,5 @@
 }
     </script>
   </body>
+
 </html>
