@@ -63,17 +63,17 @@ These APIs provide real-time weather conditions, air quality data, and weather f
 
 4. JavaScript dynamically updates the webpage with:
 
-  - City temperature
+     - City temperature
 
-  - Weather description
+     - Weather description
 
-  - Date and time
+     - Date and time
 
-  - Sunrise and sunset timings
+     - Sunrise and sunset timings
 
-  -  AQI metrics
+     -  AQI metrics
 
-   - 5-day weather forecast
+     -  5-day weather forecast
 
 # Future Improvements
 
